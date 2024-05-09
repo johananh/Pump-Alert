@@ -82,7 +82,7 @@ On the first power-up, configure the device to connect to your local WiFi networ
 After connecting to the network, if all goes well, you will get a telegram message with the device ip.
 - **Access the Web Interface**: Connect to the pump's web interface provided by the ESP01, use the ip from that restart message, or by going to pump.local.
 - **Set Maximum Run Time and Downtime**: Specify the maximum allowed run time and downtime for the pump.
-- **Configure Daily Operational Check**: Set the time for the "Daily Ok" message. Set this to 00:00 will disablr this dayly message.
+- **Configure Daily Operational Check**: Set the time for the "Daily Ok" message. Set this to 00:00 will disable this daily message.
 - **Train Mode**: If "Train Mode" is enabled, a message will be sent each time the pump turns on or off, indicating the duration the pump was in the last state.
 - **Display Time Metrics**: The interface displays the maximum on-time and off-time since the last power up.
 
@@ -92,12 +92,13 @@ After connecting to the network, if all goes well, you will get a telegram messa
 - **Configure Daily Operational Check**: Set the time for the "Daily OK" message. Setting this to 00:00 will disable this daily message.
 - **Train Mode**: When "Train Mode" is enabled, a message will be sent each time the pump turns on or off, indicating the duration the pump was in the last state.
 - **Display Time Metrics**: The interface displays the maximum on-time and off-time since the last power up.
-
+- **Note:** The acomulated  maximum on-time and off-time are cleard when the on or off time alert settings are changed.
+  
 ## Usage
 Once installed and configured, the system will monitor the pump's activity. Alerts will be sent through Telegram if:
 - The pump runs longer than the set maximum time.
 - The pump hasn't activated after the set maximum downtime.
-- A daily check (if everything is normal) will be sent at the specified time.
+- A daily check (if everything is normal) will be sent at the specified time (disabled if set to 00:00).
 - If "Train Mode" is enabled, a message is sent each time the pump's state changes.
 - The LED will blink briefly every 2 seconds when the pump is idle and will stay on continuously when the pump is active.
 
