@@ -68,8 +68,7 @@ This project was developed using the ESP01 module, but it is compatible with any
 On the first power-up, configure the device to connect to your local WiFi network by following these steps:
 1. Set your mobile device's WiFi to connect to the "bup" access point (AP).
 2. Open a web browser and navigate to `192.168.1.4` — the default IP address for the ESP AP.
-3. A configuration page should appear. Select your WiFi network and enter the password to connect the device to your local WiFi network.
-4. 
+3. A configuration page should appear. Select your WiFi network and enter the password to connect the device to your local WiFi network. 
 
 ## Configuration
 - **Access the Web Interface**: Connect to the pump's web interface provided by the ESP01 via WiFi.
