@@ -5,7 +5,7 @@ This project is designed as a monitoring and alert system for water pumps, which
 
 ## Features
 
-- **Current Monitoring**: Uses a current transformer to monitor the electricity usage of the pump.
+- **Current Monitoring**: Uses a current transformer to monitor if pump is on or off.
 - **Configurable Alerts**: Users can set maximum run times and downtime through a web interface.
 - **Daily Status Updates**: Sends daily "All OK" messages if the system is functioning normally.
 - **Telegram Notifications**: Alerts are sent via the Telegram API, allowing for real-time notifications.
