@@ -105,5 +105,5 @@ Once installed and configured, the system will monitor the pump's activity. Aler
 Contributions to this project are welcome. Please fork this repository, make your changes, and submit a pull request for review.
 
 ## License
-This project is licensed under custom license - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under custom license - see the [LICENSE](LICENSE) file for details.
 
