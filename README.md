@@ -5,11 +5,11 @@ This project is designed as a monitoring and alert system for water pumps, which
 
 ## Features
 
-- **Current Monitoring**: Uses a current transformer to monitor if pump is on or off.
-- **Configurable Alerts**: Users can set maximum run times and downtime through a web interface.
-- **Daily Status Updates**: Sends daily "All OK" messages if the system is functioning normally.
-- **Telegram Notifications**: Alerts are sent via the Telegram API, allowing for real-time notifications.
-- **Web Interface**: Accessible at `pump.local` (if mDNS is enabled) or via the device IP, which is communicated through Telegram after power up.
+- **Current Monitoring:** Uses a current transformer to monitor if pump is on or off.
+- **Configurable Alerts:** Users can set maximum run times and downtime through a web interface.
+- **Daily Status Updates:** Sends daily "All OK" messages if the system is functioning normally.
+- **Telegram Notifications:** Alerts are sent via the Telegram API, allowing for real-time notifications.
+- **Web Interface:** Accessible at `pump.local` (if mDNS is enabled) or via the device IP, which is communicated through Telegram after power up.
 <img src="Images/webPage.jpg" width="30%" alt="Web Interface Screenshot">
 
 ## What You Need
@@ -35,15 +35,15 @@ Assembly is rather non-critical; just make sure your power supply is well away f
 ### Software Setup
 Follow these steps to configure the software for the project:
 
-1. **Clone the Repository**
+1. **Clone the Repository:**
    Clone this repository to your local machine using your preferred method.
 
-2. **Create a Telegram Bot**
+2. **Create a Telegram Bot:**
    Set up a Telegram bot using BotFather. Detailed instructions on creating a Telegram bot and obtaining your Telegram token and chat ID can be found here:
    - [Creating a Telegram Bot with BotFather](https://arabind-meher.medium.com/creating-a-telegram-bot-with-botfather-a-step-by-step-guide-605e954de647)
    - [Finding Your Telegram Chat ID](https://www.wikihow.com/Know-Chat-ID-on-Telegram-on-Android#Finding-Your-Personal-Chat-ID)
 
-3. **Open and Configure the Project**
+3. **Open and Configure the Project:**
    Open the project with PlatformIO on Visual Studio Code. Set the input pin, your time zone, WiFi credentials and Telegram bot details in the designated sections of the code:
 
    ```c++
