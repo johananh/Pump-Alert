@@ -47,7 +47,10 @@ Follow these steps to configure the software for the project:
    Open the project with PlatformIO or your preferred IDE. Insert your WiFi credentials and Telegram bot details in the designated sections of the code:
 
    ```c++
-   // WiFi credentials
+   // time is needed for daily OK msg:
+   NTPClient timeClient(ntpUDP, "pool.ntp.org", 10800, 600000); // Adjust the second parameter to the offset from UTC in seconds.
+
+    // WiFi credentials
    //const char* ssid = "your_wifi_ssid"; //uncomment and set if you don't want to use WiFi Manager
    //const char* password = "your_wifi_password"; // Same, needed only if you don't want to use WiFi Manager
 
@@ -57,16 +60,16 @@ Follow these steps to configure the software for the project:
 
 ### Install and Build with PlatformIO
 If you haven't already, follow these steps to install PlatformIO in Visual Studio Code and build the project:
-1. Install **PlatformIO** extension for Visual Studio Code from the VS Code marketplace.
+1. Install the **PlatformIO** extension for Visual Studio Code from the VS Code marketplace.
 2. Open the project folder in Visual Studio Code.
 3. Build the project by accessing the PlatformIO: Build option from the PlatformIO icon in the activity bar or using the shortcut `Ctrl+Alt+B`.
 
 ### Hardware Compatibility
 This project was developed using the ESP01 module, but it is compatible with any ESP8266 board. Boards with built-in USB ports are recommended for easier programming.
 
-### Initial WiFi Configuration
+### Initial WiFi Configuration (if WiFi manager is used)
 On the first power-up, configure the device to connect to your local WiFi network by following these steps:
-1. Set your mobile device's WiFi to connect to the "bup" access point (AP).
+1. Set your mobile device's WiFi to connect to the "Pump Alert AP" access point.
 2. Open a web browser and navigate to `192.168.1.4` — the default IP address for the ESP AP.
 3. A configuration page should appear. Select your WiFi network and enter the password to connect the device to your local WiFi network. 
 
