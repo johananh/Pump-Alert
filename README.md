@@ -79,7 +79,8 @@ On the first power-up, configure the device to connect to your local WiFi networ
 3. A configuration page should appear. Select your WiFi network and enter the password to connect the device to your local WiFi network. 
 
 ## Configuration
-- **Access the Web Interface**: Connect to the pump's web interface provided by the ESP01 via WiFi.
+After connecting to the network, if all goes well, you will get a telegram message with the device ip.
+- **Access the Web Interface**: Connect to the pump's web interface provided by the ESP01, use the ip from that restart message, or by going to pump.local.
 - **Set Maximum Run Time and Downtime**: Specify the maximum allowed run time and downtime for the pump.
 - **Configure Daily Operational Check**: Set the time for the "Daily Ok" message. Set this to 00:00 will disablr this dayly message.
 - **Train Mode**: If "Train Mode" is enabled, a message will be sent each time the pump turns on or off, indicating the duration the pump was in the last state.
