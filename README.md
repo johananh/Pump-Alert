@@ -47,6 +47,11 @@ Follow these steps to configure the software for the project:
    Open the project with PlatformIO or your preferred IDE. Insert your WiFi credentials and Telegram bot details in the designated sections of the code:
 
    ```c++
+   // select te pulses input pin:
+   
+   const int inputPin = 3; //  RX pin used as input ESP01
+   //const int inputPin = 5; //  node MCU use D1 (GPIO5) pin as input
+
    // time is needed for daily OK msg:
    NTPClient timeClient(ntpUDP, "pool.ntp.org", 10800, 600000); // Adjust the second parameter to the offset from UTC in seconds.
 
