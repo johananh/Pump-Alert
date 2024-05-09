@@ -44,7 +44,7 @@ Follow these steps to configure the software for the project:
    - [Finding Your Telegram Chat ID](https://www.wikihow.com/Know-Chat-ID-on-Telegram-on-Android#Finding-Your-Personal-Chat-ID)
 
 3. **Open and Configure the Project**
-   Open the project with PlatformIO or your preferred IDE. Insert your WiFi credentials and Telegram bot details in the designated sections of the code:
+   Open the project with PlatformIO on Visual Studio Code. Set the input pin, your time zone, WiFi credentials and Telegram bot details in the designated sections of the code:
 
    ```c++
    // select te pulses input pin:
