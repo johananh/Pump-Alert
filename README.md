@@ -1,7 +1,7 @@
 # Pump Alert System
 
 ## Description
-This project is designed as a monitoring and alert system for water pumps, which are activated by water level switches to drain excess water and deactivated when water levels are low. It employs an ESP01 microcontroller with a current transformer coil to tsample current of the pumps. This setup helps identify operational irregularities such as excessive running times or prolonged periods of inactivity, which could signify problems like a disconnected pipe or a malfunctioning pump. Alerts are sent via Telegram.
+This project is designed as a monitoring and alert system for water pumps, which are activated by water level switches to drain excess water and deactivated when water levels are low. It employs an ESP01 microcontroller with a current transformer coil to sample the pumps current. This setup helps identify operational irregularities such as excessive running times or prolonged periods of inactivity, which could signify problems like a disconnected pipe or a malfunctioning pump. Alerts are sent via Telegram.
 
 ## Features
 
